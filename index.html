@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="banner">
+        <video src="london.mp4" autoplay muted loop></video>
+    </section>
+    <div class ="container">
+    <h2>Scroll To See Magic Again</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum at unde velit praesentium odit, aut, alias, magni vel ad eum quisquam illum cumque? Minima aspernatur perspiciatis, corrupti autem totam molestias.<br></p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat explicabo tempore dolor magnam error vitae nisi a amet autem quisquam assumenda molestias, ratione laudantium blanditiis fuga voluptates ipsum obcaecati sit?<br></p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis tempora, repudiandae assumenda pariatur dolore modi necessitatibus reprehenderit. Ex culpa quam fugit, sit eius dignissimos? Consequuntur reiciendis rerum numquam odio iure.</p>
+</div>
+    <script type="text/javascript">
+        const banner = document.querySelector('.banner');
+        window.addEventListener('scroll', function(){
+            const value = 800 - window.scrollY;
+            banner.style.clipPath = "circle("+ value +"px at center center)";
+        })
+
+    </script>
+</body>
+</html>
